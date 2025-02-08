@@ -89,6 +89,51 @@ export default function App() {
   );
 }
 
+// const styles = StyleSheet.create({
+//   container: { flex: 1, justifyContent: "center", alignItems: "center", padding: 20 },
+//   title: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
+//   info: { fontSize: 16, textAlign: "center", marginBottom: 30 },
+//   button: { backgroundColor: "blue", padding: 15, borderRadius: 10 },
+//   buttonText: { color: "white", fontSize: 18, fontWeight: "bold" },
+//   themeButton: { backgroundColor: "#008080", padding: 15, marginVertical: 10, borderRadius: 8, width: "80%", alignItems: "center" },
+//   themeText: { color: "white", fontSize: 18, fontWeight: "bold" },
+//   customizationContainer: { flexDirection: "row", marginVertical: 20 },
+//   customButton: { backgroundColor: "#555", padding: 10, marginHorizontal: 5, borderRadius: 5 },
+//   customText: { color: "white", fontSize: 16 },
+//   startButton: { backgroundColor: "green", padding: 15, borderRadius: 10, marginTop: 20 },
+//   avatar: { 
+//     width: 150, 
+//     height: 250, 
+//     marginBottom: 20 
+//   },
+//   helmet: { 
+//     position: "absolute", 
+//     top: 50,  // Adjusted for head position
+//     left: "50%", 
+//     transform: [{ translateX: -40 }], // Centering on head
+//     width: 80, 
+//     height: 60, 
+//     zIndex: 2
+//   },
+//   bag: { 
+//     position: "absolute", 
+//     top: 140, // Adjusted for back
+//     left: "50%",
+//     transform: [{ translateX: -45 }], // Centering on back
+//     width: 90, 
+//     height: 120, 
+//     zIndex: 1 
+//   },
+//   shoes: { 
+//     position: "absolute", 
+//     bottom: 20, // Adjusted for feet
+//     left: "50%",
+//     transform: [{ translateX: -40 }], 
+//     width: 80, 
+//     height: 50, 
+//     zIndex: 2 
+//   }
+// });
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: "center", alignItems: "center", padding: 20 },
   title: { fontSize: 24, fontWeight: "bold", marginBottom: 20 },
@@ -101,10 +146,6 @@ const styles = StyleSheet.create({
   customButton: { backgroundColor: "#555", padding: 10, marginHorizontal: 5, borderRadius: 5 },
   customText: { color: "white", fontSize: 16 },
   startButton: { backgroundColor: "green", padding: 15, borderRadius: 10, marginTop: 20 },
-  // avatar: { width: 150, height: 250, marginBottom: 20 },
-  // helmet: { position: "absolute", top: 100, width: 60, height: 60 },
-  // bag: { position: "absolute", top: 150, width: 80, height: 100 },
-  // shoes: { position: "absolute", bottom: 50, width: 80, height: 50 },
   avatar: { 
     width: 150, 
     height: 250, 
@@ -112,28 +153,27 @@ const styles = StyleSheet.create({
   },
   helmet: { 
     position: "absolute", 
-    top: 50,  // Adjusted for head position
+    top: 40,  // Positioned above the avatar's head
     left: "50%", 
-    transform: [{ translateX: -40 }], // Centering on head
+    transform: [{ translateX: -40 }], // Centering the helmet on the head
     width: 80, 
-    height: 60, 
-    zIndex: 2
+    height: 50, 
+    zIndex: 2 
   },
   bag: { 
     position: "absolute", 
-    top: 140, // Adjusted for back
-    left: "50%",
-    transform: [{ translateX: -45 }], // Centering on back
-    width: 90, 
-    height: 120, 
+    top: 120, // Positioned near the avatar's shoulder
+    left: "30%",  // Offset to the side of the body
+    width: 60, 
+    height: 90, 
     zIndex: 1 
   },
   shoes: { 
     position: "absolute", 
-    bottom: 20, // Adjusted for feet
-    left: "50%",
+    bottom: 10, // Positioned near the avatar's feet
+    left: "50%", 
     transform: [{ translateX: -40 }], 
-    width: 80, 
+    width: 70, 
     height: 50, 
     zIndex: 2 
   }
